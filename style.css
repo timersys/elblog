@@ -992,6 +992,24 @@ html body .simple-social-icons ul li.social-linkedin a {
 	text-align: left;
 	float: left;
 	font-weight: 300;
+	margin-bottom: 0 !important;
+	line-height: normal;
+}
+.master-title.fixed .sharedaddy{
+	float: right;
+}	
+.master-title.fixed .sharedaddy .sd-content ul{
+	margin-bottom: 0 !important;
+}	
+.master-title.fixed .sd-social-icon .sd-content ul li[class*='share-'] a, 
+.master-title.fixed .sd-social-icon .sd-content ul li[class*='share-'] div.option a {
+	top: -6px;
+	padding: 6px;
+	opacity: 0.7;
+	margin: 7px 5px -6px 5px;
+}
+.master-title.fixed .sd-social-icon .sd-content ul li[class*='share-'] a:hover{
+	opacity: 1;
 }
 .the-title h1, .entry-title {
 	font-size: 48px;
@@ -1286,7 +1304,23 @@ p.entry-meta {
 .entry-header .entry-meta {
 	margin-bottom: 24px;
 }
-
+.single .entry-header .entry-meta{
+	float: left;
+}
+.single .sharedaddy {
+	float: left;
+	clear: none;
+	margin-left: 20px;
+}
+.single .entry-header .sd-social-icon .sd-content ul li[class*='share-'] a, 
+.single .entry-header .sd-social-icon .sd-content ul li[class*='share-'] div.option a {
+	top: -6px;
+	padding: 6px;
+	opacity: 0.7;
+}
+.single .entry-header .sd-social-icon .sd-content ul li[class*='share-'] a:hover{
+	opacity: 1;
+}
 .entry-footer .entry-meta {
 	border-top: 2px solid #f5f5f5;
 	padding-top: 24px;

@@ -138,9 +138,3 @@ remove_action('edit_user_profile_update', 'genesis_user_meta_save');
 remove_theme_support('genesis-seo-settings-menu'); 
 add_filter('pre_option_' . GENESIS_SEO_SETTINGS_FIELD, '__return_empty_array'); 
 
-/**
- * Sharing daddy
- */
-
-remove_filter( 'the_content', 'sharing_display', 19 );
-remove_filter( 'the_excerpt', 'sharing_display', 19 );
