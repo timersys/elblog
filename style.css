@@ -1155,6 +1155,19 @@ html body .simple-social-icons ul li.social-linkedin a {
 	padding: 10px 0 0;
 }
 
+nav {
+	clear: both;
+}
+ 
+/* Navigation toggles
+--------------------------------------------- */
+ 
+.sub-menu-toggle,
+.menu-toggle {
+	display: none;
+	visibility: hidden;
+}
+
 /* ## Site Header Navigation
 --------------------------------------------- */
 
@@ -1268,6 +1281,14 @@ html body .simple-social-icons ul li.social-linkedin a {
 .ads-after-first-post{
 	clear: both;
 	margin-bottom: 40px;
+}
+.ads-after-first-post-m{
+	clear: both;
+	margin-bottom: 30px;
+}
+.ads-after-first-post-m,
+.ads-before-post-m{
+	display: none;
 }
 .genesis-grid-even {
   float: right;
@@ -1697,8 +1718,7 @@ li.comment {
 		font-size: 16px;
 	}
 
-	.site-inner,
-	.wrap {
+	.site-inner {
 		padding-left: 5%;
 		padding-right: 5%;
 	}
@@ -1736,5 +1756,153 @@ li.comment {
 	.sidebar .widget.enews-widget {
 		padding: 40px;
 	}
+	.the-title h1, .entry-title{
+		font-size: 38px;
+	}
+	.widget.simple-social-icons{
+		clear: both;
+		margin-top: 10px;
+		float: left;
+	}
+	.master-title .widget.simple-social-icons li:first-child{
+		margin-left: 0 !important;
+	}	
+}
+@media only screen and (max-width: 728px) {
+	.site-container{
+		overflow: hidden;
+	}
+	.ads-after-first-post,
+	.ads-before-post{
+		display: none;
+	}
+	
+	.ads-after-first-post-m{
+		display: block;
+		margin-left: -6%;		
+	}
+	.ads-before-post-m{
+		display: block;
+		margin-left: -2%;
+	}
+	.simple-social-icons ul{
+		float: left;
+	}
+	.nav-secondary{
+		display: none;
+	}
+	.master-title div.sharedaddy.sd-sharing-enabled{
 
+		clear: both;
+		margin-left: 0;
+		float: left;
+		margin-top: 10px;
+
+	}
+}
+/* Navigation toggles - Ensure Menu Displays when Scaled Up
+--------------------------------------------- */
+ 
+@media only screen and (min-width: 768px) {
+ 
+	nav {
+		display: block !important;
+	}
+}
+ 
+/* Navigation toggles - Mobile (Change max width as you see fit)
+--------------------------------------------- */
+ 
+@media only screen and (max-width: 767px) {
+ 
+	.menu-toggle,
+	.sub-menu-toggle {
+		display: block;
+		font-size: 20px;
+		font-size: 2rem;
+		font-weight: 700;
+		margin: 0 auto;
+		overflow: hidden;
+		padding: 20px;
+		padding: 2rem;
+		text-align: center;
+		visibility: visible;
+	}
+ 
+	a.menu-toggle,
+	a.sub-menu-toggle {
+		background-color: transparent;
+		color: #fff;
+	}
+ 
+	.sub-menu-toggle {
+		padding: 18px;
+		padding: 1.8rem;
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+ 
+	.sub-menu-toggle:before {
+		content: "+";
+	}
+ 
+	.sub-menu-toggle.activated:before {
+		content: "-";
+	}
+ 
+	nav {
+		display: none;
+		position: relative;
+	}
+ 	.nav-primary .genesis-nav-menu a{
+ 		color: #333;
+ 	}
+ 	a.sub-menu-toggle{
+ 		padding-top: 13px;
+ 	}
+	.genesis-nav-menu .menu-item {
+		background-color: #f5f5f5;
+		display: block;
+		position: relative;
+		text-align: left;
+	}
+ 
+	.genesis-nav-menu .menu-item:hover {
+		position: relative;
+	}
+ 
+	.genesis-nav-menu .sub-menu {
+		clear: both;
+		display: none;
+		opacity: 1;
+		position: static;
+		width: 100%;
+	}
+ 
+	.genesis-nav-menu .sub-menu a {
+		border-left: 0;
+		position: relative;
+		width: auto;
+	}
+ 
+	.genesis-nav-menu .sub-menu .sub-menu {
+		margin: 0;
+	}
+ 
+	.genesis-nav-menu .sub-menu .sub-menu a {
+		background-color: #f5f5f5;
+		padding-left: 30px;
+	}
+ 
+	.genesis-nav-menu .sub-menu .sub-menu .sub-menu a {
+		background-color: #fff;
+		padding-left: 40px;
+	}
+ 
+	.nav-primary a:hover,
+	.nav-primary .current-menu-item > a {
+		color: #333;
+	}
+ 
 }

@@ -22,6 +22,21 @@ function elblog_adsense(){
 				do_action( 'ads-after-first-post' );
 				
 				dynamic_sidebar( 'ads-after-first-post' );
+				
+
+			genesis_markup( array(
+				'html5' => '</aside>',
+				'xhtml' => '</div>',
+			) );
+			//mobile version
+			genesis_markup( array(
+				'html5'   => '<aside %s>',
+				'xhtml'   => '<div class="ads-after-first-post-m widget-area header-widget-area">',
+				'context' => 'ads-after-first-post-m',
+			) );
+		
+
+				dynamic_sidebar( 'ads-after-first-post-m' );
 			
 
 			genesis_markup( array(

@@ -7,7 +7,7 @@ include_once( get_template_directory() . '/lib/init.php' );
 //* Child theme (do not remove)
 define( 'CHILD_THEME_NAME', 'El Blog' );
 define( 'CHILD_THEME_URL', 'http://demos.timersys.com/elblog' );
-define( 'CHILD_THEME_VERSION', '1.0.0' );
+define( 'CHILD_THEME_VERSION', '1.0.1' );
 
 //* Enqueue Google Fonts
 add_action( 'wp_enqueue_scripts', 'elblog_scripts' );
@@ -107,9 +107,19 @@ genesis_register_sidebar( array(
 	'description'   => __( 'This is a widget area that can be used to place ads. It runs only once after the first and fith post in blog/archives/search/ mode', 'elblog' ),
 ) );
 genesis_register_sidebar( array(
+	'id'            => 'ads-after-first-post-m',
+	'name'          => __( 'Ads #1 Mobile', 'elblog' ),
+	'description'   => __( 'This is a widget area that can be used to place ads. It runs only once after the first and fith post in blog/archives/search/ mode only on low resolutions', 'elblog' ),
+) );
+genesis_register_sidebar( array(
 	'id'            => 'ads-before-post',
 	'name'          => __( 'Ads #2', 'elblog' ),
 	'description'   => __( 'This is a widget area that can be used to place ads. It shows on single pages before content', 'elblog' ),
+) );
+genesis_register_sidebar( array(
+	'id'            => 'ads-before-post-m',
+	'name'          => __( 'Ads #2 Mobile', 'elblog' ),
+	'description'   => __( 'This is a widget area that can be used to place ads. It shows on single pages before content only on low resolutions', 'elblog' ),
 ) );
 
 /**

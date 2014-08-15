@@ -69,6 +69,21 @@ function elblog_ads_before_entry(){
 			'html5' => '</aside>',
 			'xhtml' => '</div>',
 		) );
+		//mobile version
+		genesis_markup( array(
+			'html5'   => '<aside %s>',
+			'xhtml'   => '<div class="ads-before-post-m widget-area header-widget-area">',
+			'context' => 'ads-before-post-m',
+		) );
+	
+
+			dynamic_sidebar( 'ads-before-post-m' );
+		
+
+		genesis_markup( array(
+			'html5' => '</aside>',
+			'xhtml' => '</div>',
+		) );
 	}
 	
 }
