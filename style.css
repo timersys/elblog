@@ -1162,6 +1162,7 @@ nav {
 /* Navigation toggles
 --------------------------------------------- */
  
+.genesis-nav-menu .sub-menu-toggle,
 .sub-menu-toggle,
 .menu-toggle {
 	display: none;
